@@ -81,7 +81,6 @@ def model_prediction(model_path, x_in):
     u_model = keras.models.load_model(model_path,
                                       custom_objects={
                                           'SirenLayer': SirenLayer,
-                                          'EmbedderLayer': EmbedderLayer,
                                           'sin': tf.sin,
                                           'cos': tf.cos,
                                           'abs': tf.abs,
