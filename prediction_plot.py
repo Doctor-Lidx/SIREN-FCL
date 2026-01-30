@@ -38,20 +38,9 @@ model_configs = [
 ]
 
 # ========================Grid point configuration ========================
-if velocity_model == 'overthrust':
-    fig_siz = [15, 4]
-    if frequency == 10:
-        npts_x_val = 500
-        npts_z_val = 160
-elif velocity_model == 'simple':
+if velocity_model == 'simple':
     fig_siz = [10, 4]
-    if frequency == 4:
-        npts_x_val = 100
-        npts_z_val = 100
     if frequency == 10:
-        npts_x_val = 200
-        npts_z_val = 200
-    elif frequency == 20:
         npts_x_val = 200
         npts_z_val = 200
 elif velocity_model == 'marmousi':
